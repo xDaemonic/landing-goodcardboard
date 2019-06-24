@@ -1,0 +1,110 @@
+
+.products
+	padding-top: 57px
+	padding-bottom: 73px 
+	&-title
+		margin-bottom: 3.9rem
+		margin-top: 0 
+	&-blocks
+		text-align: center
+		&_row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			&__box 
+				&__logo
+					min-height: 260px
+					margin-bottom: 1.9rem
+					width: 438px
+					&__img
+						width: 87%
+				&__text
+					margin-bottom: 2.8rem
+					font-size: 2rem
+					font-weight: 500
+					color: $title-color
+				&__buttons
+					margin-bottom: 4rem
+					& :nth-of-type(1)
+						width: 100%
+						max-width: 128px
+						min-height: 48px
+						margin-right: 12px
+					& :nth-of-type(2)
+						width: 100%
+						max-width: 173px
+						min-height: 48px 
+
+@media (max-width: 992px)
+	.products
+		&-blocks
+			&_row
+				&__box
+					&__logo
+						min-height: 26.4rem
+						width: 350px
+
+@media (min-width: 768px) and (max-width: 992px)
+	.products-text-fix
+		margin-bottom: 5.2rem !important
+
+@media (min-width: 768px)
+	.m-o
+		margin-bottom: 0
+
+@media (max-width: 768px)
+	.products
+		padding-top: 3.2rem
+		padding-bottom: 0.3rem
+		&-title
+			font-size: 2.2rem
+		&-blocks
+			&_row
+				flex-wrap: wrap
+				justify-content: center
+				&__box
+					&__logo
+						width: 320px
+						min-height: max-content
+						margin-left: auto
+						margin-right: auto
+						img
+							width: 290px
+					&__text
+						font-size: 1.8rem
+						max-width: 290px
+					&__buttons
+						& :nth-of-type(1) 
+							margin-bottom: 1.5rem
+							font-size: 1.4rem
+						& :nth-of-type(2)
+							font-size: 1.4rem
+
+@media (max-width: 576px)
+	.products
+		&-title
+			margin: 0 auto 1rem
+		&-blocks
+			&_row
+				&__box
+					&__logo
+						margin-bottom: 1.2rem
+					&__text
+						margin-bottom: 1.7rem
+					&__buttons
+						margin-bottom: 2.2rem
+						& :nth-of-type(1)
+							max-width: 119px
+							min-height: 45px
+							margin-right: 0.7rem 
+						& :nth-of-type(2)
+							max-width: 161px
+							min-height: 45px
+
+
+@media (min-width: 768px)
+	.img-fix
+		transform: translateY(10%) 

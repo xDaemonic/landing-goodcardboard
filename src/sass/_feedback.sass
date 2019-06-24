@@ -1,0 +1,63 @@
+.feedback
+	background-color: $bg-color-dark
+	padding: 
+		top: 5rem
+		bottom: 6.6rem
+	&-title
+		margin-top: 0
+		margin-bottom: 4.8rem
+	&-slider
+		width: 90%
+		margin: 0 auto
+		&_box
+			height: 377px
+			width: 274px
+			overflow: hidden
+			background-color: #fff
+			margin: 0 14px 
+			&__img
+				margin: 10px auto
+.fb-arrow
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	width: 10px
+	height: 47px
+	cursor: pointer
+	z-index: 100
+	&-right
+		background: url(../img/fb-right.png) center no-repeat
+		right: -20px
+	&-left
+		left: -20px
+		background: url(../img/fb-left.png) center no-repeat 
+
+@media (max-width: 768px)
+	.feedback
+		padding-top: 3.6rem
+		padding-bottom: 4rem	
+		&-title
+			font-size: 2.2rem
+			max-width: 197px
+			margin: 0 auto 15px
+
+		&-slider
+			width: 55% 
+			&_box
+
+	.fb-arrow
+		width: 22px
+		height: 78px
+		&-right
+			background: $active-color url(../img/fb-arrow-right-active.png) center no-repeat
+			right: 0
+		&-left
+			left: 0
+			background: $active-color url(../img/fb-arrow-left-active.png) center no-repeat 
+
+@media (max-width: 576px)
+	.feedback
+		&-slider
+			width: 274px
+				
+				

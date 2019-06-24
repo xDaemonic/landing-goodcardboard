@@ -1,0 +1,114 @@
+.production
+	padding: 
+		top: 8.7rem
+		bottom: 4.5rem
+	&-slider_top
+		margin-bottom: 1.3rem
+		img
+			height: 100%
+			height: 377px
+			width: 100%
+			outline: 0
+	&-slider_bot
+		height: 78px
+		img
+			position: relative
+			height: 78px
+			width: 116px !important
+			margin: 0 6px 
+			outline: 0
+			filter: brightness(50%)
+	&-text
+		&_title
+			padding: 1.6rem 2.5rem
+			margin: 1.9rem auto 2.8rem
+			font-size: 2.8rem
+			font-weight: 400
+			color: $text-color-light 
+			background-color: $active-color
+		&_descr
+			margin-left: 2.5rem
+			font-size: 1.55rem 
+			font-weight: 300
+			color: $text-color-dark
+			p
+				text-align: justify 
+				line-height: 22px
+		
+
+@media (max-width: 992px)
+	.production-slider_bot
+		.slick-track
+			margin-left: 0
+	.production-text_title
+		text-align: center
+		margin-bottom: 10px
+	.production-text_descr
+		text-align: justify
+		text-align-last: center
+		max-width: 650px
+		margin: 0 auto
+		padding: 0 15px
+		p
+			font-size: 14px
+			line-height: 16px
+			margin: 10px auto
+
+	.production
+		padding-top: 68px
+		&-slider_top 
+			margin: 0 auto 13px
+			height: 280px 
+			max-width: 650px
+			img
+				width: 100%
+				height: 280px
+		&-slider_bot
+			max-width: 620px
+			margin: 0 auto
+			img
+				width: 86px !important
+
+@media (max-width: 768px)
+	.production
+		padding: 0.9rem 0
+		.container
+			max-width: none
+			margin: 0
+			padding: 0 
+		&-slider_top
+			margin: 0 auto 
+			padding: 0 15px
+			height: 380px
+			max-width: 510px
+			img
+				height: 100% 
+		&-slider_bot
+			display: none !important 
+		&-text
+			margin-bottom: 2.2rem
+			text-align: center 
+			&_title
+				margin-bottom: 1.7rem
+				text-transform: uppercase
+				font-size: 2rem
+				font-weight: 700
+			&_descr
+				max-width: 480px
+				p
+					font-size: 1.8rem
+
+@media (max-width: 576px)
+	.production
+			&-slider_top
+				max-width: 320px
+				img
+					height: 380px
+			&-slider_bot
+			&-text
+				&_title
+				&_descr
+					width: 290px
+					margin: 0 auto
+					p
+						font-size: 1.3rem

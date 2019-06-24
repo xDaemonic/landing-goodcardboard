@@ -1,0 +1,176 @@
+/* Global tags config */
+html:root
+	font-size: 10px
+
+input, button
+	border: none
+	&:focus
+		outline: 0
+
+body
+	box-sizing: border-box !important
+	font-family: 'Roboto', sans-serif
+	margin: 0 
+	a
+ 		text-decoration: none
+
+
+
+/* variables */ 
+$text-color-dark: #373737
+$text-color-light: #ffffff
+$active-color: #ff9d00
+$bg-color-dark: #f4f4f4
+$title-color: #313131
+$button-o-color: rgba(#373737, 0.5)
+
+
+
+
+/* global classes */
+
+
+// Правка контенера
+@media (min-width: 1199px)
+	.container 
+		max-width: 970px !important
+
+// Текст в форме
+.form-uppercase
+	display: block
+	text-transform: uppercase 
+	font-weight: 700
+
+// Кнопки
+.button
+	font-family: 'Roboto', sans-serif
+	background-color: $active-color
+	color: $text-color-light
+	border-radius: 5px 
+	&-big
+		padding: 20px 20px
+
+		font-size: 15px
+		font-weight: 500
+	&-o
+		color: $button-o-color
+		border: 1px solid $button-o-color
+		background-color: transparent
+		&:hover
+			background-color: transparent !important
+
+// Порог для ховер эффектов
+@media (min-width: 992px)
+	.button
+		&:hover
+			cursor: pointer
+			background-color: lighten($active-color, 7)
+
+	.slider-arrow
+		&-right
+			&:hover
+				background-color: $active-color
+				background-image: url(../img/arrow-right-active.png)
+		&-left
+			&:hover
+				background-color: $active-color
+				background-image: url(../img/arrow-left-active.png)
+
+	.clients-logos_box__img
+		&:hover
+			filter: grayscale(0%)
+			cursor: pointer 
+	
+	.header-phone_number
+		&-1, &-2
+			position: relative
+			&:active, &:link, &:hover 
+				&:hover
+					color: rgba($text-color-dark, 0.7)
+
+	.contacts-phone
+		&:active, &:link, &:hover
+			&:hover
+				color: rgba($text-color-dark, 0.7)
+
+	.contacts-mail
+		&:active, &:link, &:hover
+			&:hover
+				color: rgba($text-color-dark, 0.7)
+
+// Заголовки
+.repeat-title
+	position: relative
+	text-align: center
+	text-transform: uppercase
+	font-size: 2.7rem
+	font-weight: 700
+	color: $title-color
+	&::after
+		content: ''
+		position: absolute
+		bottom: -17px 
+		display: block
+		width: 100%
+		height: 6px
+		background: url(../img/line.png) center no-repeat
+
+@media (max-width: 768px)
+	.repeat-title::after
+		display: none
+
+// Стрелки слайдера
+.slider-arrow
+	position: absolute
+	height: 100%
+	width: 22px
+	border: 1px solid $active-color
+	z-index: 100
+	cursor: pointer
+	&-right
+		top: 0
+		left: 0
+		background: #fff url(../img/arrow-left.png) center no-repeat
+	&-left
+		top: 0
+		right: 0
+		background: #fff url(../img/arrow-right.png) center no-repeat
+
+@media (max-width: 992px) 
+	.slider-arrow
+		&-adaptive
+			&-right
+				top: 50%
+				left: 15px
+				transform: translateY(-50%)
+				max-height: 78px
+				background: $active-color url(../img/arrow-right-active.png) center no-repeat
+			&-left
+				right: 15px
+				top: 50%
+				transform: translateY(-50%)
+				max-height: 78px
+				background: $active-color url(../img/arrow-left-active.png) center no-repeat
+
+// Настройки slick
+
+.slick-current
+	filter: brightness(100%) !important
+
+.production
+	&-slider_bot
+		.slick-slide
+			width: 116px 
+		.slick-list
+			padding: 0
+		.slick-track
+			padding-left: 186px 
+
+// настройки карты
+
+iframe
+	display: none
+.ymaps-2-1-69-copyright__text
+	display: none
+.ymaps-2-1-69-copyright__link
+	display: none
